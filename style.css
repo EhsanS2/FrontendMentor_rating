@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Overpass;
+    src: url(./font/Overpass-Regular.ttf);
+}
+@font-face {
+    font-family: Overpass-bold;
+    src: url(./font/Overpass-Bold.ttf);
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+.rating,
+.thanks {
+    background-color: hsl(213, 19%, 18%);
+    width: 300px;
+    height: 310px;
+    margin: 150px auto 50px;
+    padding: 22px;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.rating {
+    display: flex;
+}
+.thanks {
+    padding: 35px 22px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.show-rate {
+    color: hsl(25, 97%, 53%);
+    height: 20px;
+    font-family: Overpass;
+    font-size: 0.65rem;
+    background-color: #444;
+    padding: 0 15px;
+    border-radius: 10px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+h3 {
+    color: #fff;
+    font-family: Overpass-bold;
+}
+.thanks img {
+    width: 110px;
+    margin-bottom: 15px;
+}
+.circles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #444;
+    margin-bottom: 25px;
+}
+.star img {
+    width: 10px;
+}
+h2 {
+    color: #fff;
+    font-family: Overpass-bold;
+    margin-bottom: 10px;
+}
+.rating p {
+    padding-bottom: 15px;
+}
+p {
+    font-size: 0.8rem;
+    font-family: Overpass;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.3rem;
+}
+.circle,
+.star {
+    border-radius: 50%;
+}
+.circle {
+    width: 38px;
+    height: 38px;
+    background-color: hsl(220, 2%, 26%);
+    cursor: pointer;
+    color: hsl(217, 12%, 63%);
+    line-height: 38px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Overpass;
+}
+.circle.active {
+    color: #fff;
+    background-color: hsl(216, 12%, 54%);
+}
+.circle:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+.submit {
+    background: hsl(25, 97%, 53%);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    font-family: Overpass;
+    height: 35px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    font-family: Overpass;
+}
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
